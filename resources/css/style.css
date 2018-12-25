@@ -1,0 +1,60 @@
+/* Universal Styles*/
+html{
+  font-size: 18px;
+  background-color: white;
+}
+body{
+  font-family: Helvetica,sans-serif;
+}
+h1,
+h4{
+  font-weight: bold;
+}
+
+header{
+background-color: black;
+color: white;
+}
+
+header .Company{
+  max-width:960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding:.66rem 0 .66 .55rem
+}
+
+.logo{
+display: flex;
+align-items: center;
+padding:.66rem 0 .66 .55rem
+}
+
+.logo{
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+.MOTORCYCLES{
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
+       background-repeat:no-repeat;
+       background-position: center;
+       background-size: cover;
+       height: 25rem;
+}
+
+.new-arrivals{
+  background-color: black;
+  color:white;
+  width:20rem;
+  padding:2rem 3rem;
+  position: relative;
+  top:9rem;
+
+}
+Sports h1{
+  font-family: Helvetica;
+  font-size: 2rem;
+  font-weight: bold;
+  margin:0 .25rem 0;
+}
