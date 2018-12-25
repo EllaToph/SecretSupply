@@ -5,6 +5,8 @@ html{
 }
 body{
   font-family: Helvetica,sans-serif;
+  width: auto;
+  margin: 0 0 0 0;
 }
 h1,
 h4{
@@ -30,7 +32,7 @@ align-items: center;
 padding:.66rem 0 .66 .55rem
 }
 
-.logo{
+.logo img{
   height: 1.5rem;
   padding-right: 1rem;
 }
@@ -58,6 +60,32 @@ Sports h1{
   font-weight: bold;
   margin:0 .25rem 0;
 }
+@media only screen and (max-width:1024px) {
+  .Sports h1{
+    font-size:1.5rem
+  }
+
+
+}
+@media only screen and (max-width:470px){
+  header {
+    height: 15rem;
+  }
+  .new-arrivals{
+    width:100px;
+    padding:1rem 2rem;
+    top:10rem;
+  }
+  .Sports h1{
+  font-size: 1rem;
+  font-family: Helvetica;
+  font-weight:bold;
+  }
+
+
+}
+
+/*nav*/
 nav{
   color:white;
   background-color: firebrick;
@@ -68,6 +96,106 @@ nav ul{
   justify-content:space-between;
   padding: 0.75rem 0;
   list-style: none;
-  margin: 0 8;
+  margin: 0px 8px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.mobile-nav{
+  display: none;
+}
+@media only screen and (max-width:1024px){
+nav ul{
+  display:none;
+  }
+  .mobile-nav{
+    display: block;
+    text-align: center;
+  }
+}
 
+
+/*Products*/
+.products,
+.BUSINESS-INFO
+{
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 0 0;
+}
+.product{
+  width: 30%;
+}
+.product-image {
+  border: 4px solid black;
+  padding: 2rem 0;
+  height: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-image img{
+  max-width: 8rem;
+}
+.description {
+  display: block;
+  background-color: black;
+  color:white;
+  text-align: center;
+  padding:0.5em;
+
+}
+
+.info{
+  width:35%;
+}
+
+.info .title{
+display: block;
+background-color: black;
+color: white;
+padding: 1rem 2rem;
+}
+@media only screen and (max-width:1024px){
+  .product{
+    width: 47%;
+  }
+  .product.glasses{
+    display: none;
+  }
+
+  .info {
+    width:35%;
+
+}
+}
+
+@media only screen and (max-width:470px){
+  .prouducts,
+  .BUSINESS-INFO{
+    flex-wrap: wrap;
+  }
+  .product{
+    margin: auto;
+    width: 90%
+  }
+  .product.watch{
+    display: none;
+  }
+  .info{
+    width:90%;
+    margin: 0.5rem auto;
+  }
+}
+footer{
+  background-color: black;
+  height: 5rem;
+  color: white;
+  text-align: left;
+  margin-top: 4rem;
+  padding: 3rem;
+}
+@media only screen and (max-width:478px){
+  footer{
+    text-align: center;
+  }
 }
